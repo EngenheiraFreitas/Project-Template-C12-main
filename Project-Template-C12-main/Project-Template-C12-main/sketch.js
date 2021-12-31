@@ -56,13 +56,14 @@ function draw() {
   //   }
   // }
 
-  // if (frameCount % 80 == 0) {
-  //   if (select_sprites == 1) {
-  //     createApples();
-  //   } else if (select_sprites == 2) {
-  //     createOrange();
-  //   }
-  // }
+   if (frameCount % 80 == 0) {
+     if (select_sprites == 1) {
+       createApples();
+     } else if (select_sprites == 2) {
+       createOrange();
+     }else {
+       createRed();
+   }
 
   // if (frameCount / 80 == 0) {
   //   if (select_sprites == 1) {
@@ -73,16 +74,19 @@ function draw() {
   //     createRed();
   //   }
   // }
-
-   if (frameCount % 80 = 0) {
-     if (select_sprites == 1) {
-       createApples();
-     } else if (select_sprites == 2) {
-       createOrange();
-     }else {
-        createRed();
-     }
-  }
+  
+  //o erro nessa condicional seria o ==, porém no parte do código mais acima que 
+     //descomentei não está chamando a função red, eu adicionei o função
+     
+   //if (frameCount % 80 = 0) {
+     //if (select_sprites == 1) {
+       //createApples();
+     //} else if (select_sprites == 2) {
+       //createOrange();
+    // }else {
+       // createRed();
+     //}
+  //}
 
 
 
